@@ -35,6 +35,14 @@ body {
   grid-template-columns: 2fr 2fr 1fr;
 }
 
+.main1 {
+  grid-area: main1;
+  background-image: url(assets/images/image-web-3-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 .nav {
   grid-area: nav;
 }
