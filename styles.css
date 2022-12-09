@@ -1,5 +1,61 @@
 @import url('https://fonts.google.com/specimen/Inter');
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  padding: 1rem 1rem;
+  align-items: center;
+}
+
+/* nav ul li a {
+  text-decoration: none;
+  padding-left: 1.5rem;
+  color: hsl(236, 100%, 50%);
+} */
+
+/* body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  min-width: 100vw;
+} */
+
+.grid-template-areas-one {
+  grid-template:
+    'logo nav nav' 50px
+    'main1 main1 aside' 345px
+    'main2 main3 aside' 180px
+    'footer1 footer2 footer3' 127px;
+  grid-gap: 1.5rem;
+  grid-template-columns: 2fr 2fr 1fr;
+}
+
 .nav {
   grid-area: nav;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.container {
+  display: grid;
+  margin: 4rem 12rem;
+
+}
+
+.aside {
+  grid-area: aside;
+  width: 250px;
+}
+
+
+
+#burguer {
+  display: none;
 }
