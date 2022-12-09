@@ -25,6 +25,56 @@ body {
   min-width: 100vw;
 }
 
+.nav {
+  grid-area: nav;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.container {
+  display: grid;
+  margin: 4rem 12rem;
+
+}
+
+.aside {
+  grid-area: aside;
+  width: 250px;
+}
+
+aside {
+  background-color: hsl(240, 100%, 5%);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+
+aside h1 {
+  color: hsl(35, 77%, 62%);
+  font-size: 1.8rem;
+}
+
+aside h2 {
+  color: hsl(36, 100%, 99%);
+  font-size: 1rem;
+  padding-top: 1.2rem;
+  line-height: 2rem;
+
+}
+
+aside p {
+  color: hsl(233, 8%, 79%);
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  padding-bottom: 3rem;
+}
+
+
 .grid-template-areas-one {
   grid-template:
     'logo nav nav' 50px
@@ -73,57 +123,80 @@ body {
   font-size: 0.7rem;
 }
 
-.nav {
-  grid-area: nav;
+.footer1 {
+  grid-area: footer1;
+  display: flex;
 }
 
-.logo {
-  grid-area: logo;
-}
-
-.container {
-  display: grid;
-  margin: 4rem 12rem;
-
-}
-
-.aside {
-  grid-area: aside;
-  width: 250px;
-}
-
-aside {
-  background-color: hsl(240, 100%, 5%);
-  padding: 1rem;
+.footer1 div {
+  padding-left: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
 }
 
-
-aside h1 {
-  color: hsl(35, 77%, 62%);
-  font-size: 1.8rem;
+.footer1 div p {
+  color: hsl(236, 13%, 42%);
+  font-size: 0.6em;
+  line-height: 1.0rem;
 }
 
-aside h2 {
-  color: hsl(36, 100%, 99%);
-  font-size: 1rem;
-  padding-top: 1.2rem;
-  line-height: 2rem;
-
+.footer1 div h3 {
+  font-size: 0.9em;
 }
 
-aside p {
+.footer1 div h2 {
   color: hsl(233, 8%, 79%);
-  line-height: 1.2rem;
-  font-size: 0.8rem;
-  padding-bottom: 3rem;
 }
 
+.footer2 {
+  grid-area: footer2;
+  display: flex;
+}
 
+.footer2 div {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
-#burguer {
-  display: none;
+.footer2 div p {
+  color: hsl(236, 13%, 42%);
+  font-size: 0.6em;
+  line-height: 1.0rem;
+}
+
+.footer2 div h3 {
+  font-size: 0.9em;
+}
+
+.footer2 div h2 {
+  color: hsl(233, 8%, 79%);
+}
+
+.footer3 {
+  grid-area: footer3;
+  display: flex;
+}
+
+.footer3 div {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer3 div p {
+  color: hsl(236, 13%, 42%);
+  font-size: 0.6em;
+  line-height: 1.0rem;
+}
+
+.footer3 div h3 {
+  font-size: 0.9em;
+}
+
+.footer3 div h2 {
+  color: hsl(233, 8%, 79%);
 }
